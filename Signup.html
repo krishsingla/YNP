@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up Page</title>
+	<link rel="stylesheet" type="text/css" href="signupStyles.css">
+</head>
+<body>
+<div id="signupContainer">
+	<form id="signupForm">
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your First Name</label>
+            <input type="text" name="firstName" class="signupInput" placeholder="E.g. Krishan">
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your Last Name</label>
+            <input type="text" name="lastName" class="signupInput" placeholder="E.g. Kumar">
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your Username</label>
+            <input type="text" name="userName" class="signupInput" placeholder="E.g. kkumar"  required>
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your Email</label>
+            <input type="email" name="email" class="signupInput" required>
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your password</label>
+            <input type="password" name="password" class="signupInput" required>
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Confirm your password</label>
+            <input type="password" name="confirmPassword" class="signupInput" required>
+		</div>
+		<div class="signupElement">
+			<label class="signupLabel"> Enter your DOB</label>
+            <input type="date" name="dob" class="signupInput">
+		</div>
+		<div class="signupElement">
+			<input type="submit" name="submit" value="SignUp...">
+			<input type="reset" name="reset" value="Clear">
+		</div>
+
+	</form>
+</div>
+</body>
+</html>

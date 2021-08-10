@@ -1,0 +1,32 @@
+#singupBody
+{
+	background-image: url(img/novelwallpaper.jpg);
+}
+
+#signupContainer
+{
+	max-width: 80%;
+	margin: 10% 10%;
+	background-image: url(img/novelwallpaper.jpg);
+	background-size: cover;
+}
+
+#signupForm
+{
+	
+}
+
+.signupElement
+{
+	display: flex;
+    padding: 1em;
+}
+
+.signupInput
+{
+	margin-left: 5%;
+}
+.signupInput:hover
+{
+	border: 1px solid green;
+}

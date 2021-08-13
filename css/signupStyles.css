@@ -1,14 +1,11 @@
-#singupBody
-{
-	background-image: url(img/novelwallpaper.jpg);
-}
 
 #signupContainer
 {
-	max-width: 80%;
-	margin: 10% 10%;
-	background-image: url(img/novelwallpaper.jpg);
-	background-size: cover;
+	margin: 0 20%;
+	padding: 5%;
+	background: #eee;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 #signupForm
@@ -19,7 +16,9 @@
 .signupElement
 {
 	display: flex;
-    padding: 1em;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 5%;
 }
 
 .signupInput
@@ -28,5 +27,24 @@
 }
 .signupInput:hover
 {
-	border: 1px solid green;
+/*	border: 1px solid green;*/
+background-color: red;
+color: white;
+}
+
+.submit
+{
+	display: flex;
+}
+
+.submit  > [type="submit"]
+{
+	color:  red;
+	flex-grow: 1;
+}
+
+.submit  > [type="reset"]
+{
+	color:  red;
+	flex-grow: 1;
 }

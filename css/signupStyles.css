@@ -1,3 +1,9 @@
+#signupHeading
+
+{
+	display: flex;
+	justify-content: center;
+}
 
 #signupContainer
 {
@@ -5,46 +11,92 @@
 	padding: 5%;
 	background: #eee;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 }
 
-#signupForm
+@media all and (min-width: 350px)
 {
-	
+.signupElement, .submitBox
+{
+	display: flex;
+    flex-flow: column wrap;
+    padding: 5%;
+   
 }
 
-.signupElement
+}
+
+@media all and (min-width: 700px)
+{
+.signupElement, .submitBox
 {
 	display: flex;
     flex-flow: row;
     justify-content: space-between;
     padding: 5%;
+   
 }
 
-.signupInput
-{
-	margin-left: 5%;
-}
-.signupInput:hover
-{
-/*	border: 1px solid green;*/
-background-color: red;
-color: white;
 }
 
-.submit
+
+
+.signupElement > label
 {
-	display: flex;
+	flex: 1 2 35%;
+	padding: 2%;
+	border: 0px;
+}
+.signupElement > input
+{
+    flex: 2 1 45%;
+    padding: 2%;
+	border: 0px;
+	border-radius: 2%;
+	transition: transform 1s;
 }
 
-.submit  > [type="submit"]
+.signupElement >input:focus
 {
-	color:  red;
-	flex-grow: 1;
+   outline: 0;
+   transform: translate(2.5%,0);
 }
 
-.submit  > [type="reset"]
+.signupElement >input:hover
 {
-	color:  red;
-	flex-grow: 1;
+ background-color: darkgray;
+}
+
+.submitButton
+{ 
+	background-color: rgba(85, 170, 85,0.8);
+	flex-basis: 40%;
+	padding: 2%;
+	color: white;
+	transition: all 1s ease;
+	border-radius: 50% 0;
+	border: 0;
+}
+
+.resetButton
+{
+	background-color: rgba(138, 69, 138, 0.8);
+	flex-basis: 40%;padding: 2%;
+	color: white;
+	transition: all 0.75s ease;
+	border-radius:0 50%;
+	border: 0;
+}
+
+.submitButton:hover
+{ 
+	background-color: rgba(85, 170, 85,0.4);
+	transform: scale(0.95);
+	
+}
+
+.resetButton:hover
+{
+	background-color: rgba(138, 69, 138, 0.4);
+	transform: scale(0.95);
 }

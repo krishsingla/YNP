@@ -1,0 +1,27 @@
+{
+  "name": "ynp",
+  "version": "1.0.0",
+  "description": "Your Novel Project - Allows users to add to the novel",
+  "main": "login.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jshint": "^2.13.0",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjit-pandher/YNP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjit-pandher/YNP/issues"
+  },
+  "homepage": "https://github.com/ranjit-pandher/YNP#readme"
+}

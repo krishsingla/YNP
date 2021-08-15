@@ -1,6 +1,100 @@
-body
+#main
 {
-    height: 1000px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vw;
+    background-color: #eee;
+}
+
+.pageHeading
+{
+    margin:0;
+    padding: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.pageHeading > h2
+{
+    
+}
+.nextPage
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-end;
+    padding: 2%;
+    flex: 0 0 50%;
+}
+
+.nextPage > button
+{
+    
+    border: 0;
+    background-color: darkgray;
+
+} 
+
+.nextPage > button > a
+{
+ text-decoration: none;
+  color: inherit;
+}
+
+.linkSignup
+{
+    margin-left: 2%;
+}
+
+#finalNovel
+{
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 50vh;
+    padding: 5% 5% 0 5%;
+}
+
+.novelContainer
+{
+    flex: 1;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+.inputNovel
+{
+    display: flex;
+    flex-flow: column nowrap;
+     padding: 0 5% 5% 5%;
+}
+
+.addNovelButtons
+{
+ margin-top: 2%;
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: center;
+}
+
+.add, .clear
+{
+  padding: 2%;
+  border: none;
+  background-color: rgba(72, 111, 136, 0.6);
+  transition: all 1s ease;
+}
+
+.clear
+{
+
+    margin-left: 5%;
+}
+
+.add:hover,.clear:hover
+{
+    background-color: rgba(72, 111, 136, 0.9);
+    transform: scale(0.95);
 }
 /*
 #main

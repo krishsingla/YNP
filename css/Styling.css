@@ -69,6 +69,11 @@
      padding: 0 5% 5% 5%;
 }
 
+.textContainer
+{
+    padding: 2%;
+}
+
 .addNovelButtons
 {
  margin-top: 2%;
@@ -77,12 +82,13 @@
  justify-content: center;
 }
 
-.add, .clear
+.add, .clear, .linkContact, .linkSignup
 {
   padding: 2%;
   border: none;
   background-color: rgba(72, 111, 136, 0.6);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
+  border-radius: 100%;
 }
 
 .clear
@@ -91,7 +97,7 @@
     margin-left: 5%;
 }
 
-.add:hover,.clear:hover
+.add:hover,.clear:hover,.linkContact:hover, .linkSignup:hover
 {
     background-color: rgba(72, 111, 136, 0.9);
     transform: scale(0.95);

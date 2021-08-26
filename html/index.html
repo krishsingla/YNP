@@ -2,11 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
 	<link rel="stylesheet" type="text/css" href="../css/styling.css">
 	<title>Interactive Novel</title>
 </head>
 <body>
+ <div class="mainHeader">
+  	<ul>
+  		<li class="navItems"> <a href="index.html">Home</a> </li>
+  		<li class="navItems"> <a href="login.html"> Login</a></li>
+  		<li class="navItems"> <a href="signup.html"> Signup</a></li>
+  		<li class="navItems help"> <a href="help.html"> Help</a></li>
+  	</ul>
 
+  </div>
 <div id="main">
 
 	<div class="pageHeading"> 
@@ -23,36 +33,21 @@
 	</div>
 	<div id="finalNovel">
 		<textarea class="novelContainer"> 
- 	I am the kind of talk shows you Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
- 	padding: 0 5% 5% 5%;padding: 0 5% 5% 5%;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+ 	          Novel Here		
  	
        </textarea>
 	</div>
     <div class="inputNovel">
     	<h4> Contribute </h4>
-    	<textarea placeholder="Enter your part of the novel here..." maxlength="100" class="textContainer">  
-        </textarea>
+    	<!-- <textarea placeholder="Enter your part of the novel here..." maxlength="100" class="textContainer"></textarea> -->  
+    	<input type="text" name="yourNovel" class="textContainer" maxlength="15" placeholder="testing ">
+        
       <div class="addNovelButtons">
-    	<button class="add" value="Add">ADD</button>
+    	<button class="add" value="Add" onclick="start()">ADD</button>
     	<button class="clear" value="Clear">CLEAR</button>
       </div>
     </div>
 </div>
+<script type="text/javascript" src="../js/logic.js"></script>
 </body>
 </html>

@@ -1,5 +1,13 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 200vh;
+   
+}
 #main
 {
+    margin-top: 85px;
     display: flex;
     flex-flow: column nowrap;
     height: 100vw;
@@ -14,10 +22,11 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-.pageHeading > h2
+.pageHeading >  h2
 {
-    
+   
 }
+
 .nextPage
 {
     display: flex;
@@ -99,8 +108,10 @@
 
 .add:hover,.clear:hover,.linkContact:hover, .linkSignup:hover
 {
-    background-color: rgba(72, 111, 136, 0.9);
+    background-color: RGBA(0, 4, 13,0.85);
     transform: scale(0.95);
+    cursor: pointer;
+    color: white;
 }
 /*
 #main

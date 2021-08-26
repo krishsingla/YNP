@@ -24,7 +24,7 @@
    
 }
 
-}
+}  
 
 @media all and (min-width: 700px)
 {
@@ -91,6 +91,7 @@
 { 
 	background-color: rgba(85, 170, 85,0.4);
 	transform: scale(0.95);
+	cursor: pointer;
 	
 }
 
@@ -98,4 +99,5 @@
 {
 	background-color: rgba(138, 69, 138, 0.4);
 	transform: scale(0.95);
+	cursor: pointer;
 }
